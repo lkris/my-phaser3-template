@@ -1,9 +1,9 @@
 import * as gameConfig from './gameConfig';
 
-class gameBoot extends Phaser.Scene {
+class sceneBoot extends Phaser.Scene {
 
 	constructor() {
-		super("GameBoot");
+		super("SceneBoot");
 	}
 
 	preload() {
@@ -11,8 +11,8 @@ class gameBoot extends Phaser.Scene {
 	}
 
 	create() {
-		this.scene.start("GameLevel1");
+		this.scene.start("SceneLevel1");
 	}
 }
 
-export { gameBoot };
+export { sceneBoot };

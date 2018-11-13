@@ -1,9 +1,9 @@
 import * as gameConfig from './gameConfig';
 
-class gameLevel1 extends Phaser.Scene {
+class sceneLevel1 extends Phaser.Scene {
 
 	constructor() {
-		super("GameLevel1");
+		super("SceneLevel1");
 	}
 
 	preload() {
@@ -23,4 +23,4 @@ class gameLevel1 extends Phaser.Scene {
 	}
 }
 
-export { gameLevel1 };
+export { sceneLevel1 };

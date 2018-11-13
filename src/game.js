@@ -3,8 +3,8 @@ import 'phaser';
 // config values
 import * as gameConfig from './gameConfig';
 // scenes
-import { gameBoot } from './gameBoot';
-import { gameLevel1 } from './gameLevel1'
+import { sceneBoot } from './sceneBoot';
+import { sceneLevel1 } from './sceneLevel1'
 
 var game;
 
@@ -15,7 +15,7 @@ window.onload = function(){
 	    width: gameConfig.width,
 	    height: gameConfig.height,
         backgroundColor: gameConfig.backgroundColor,
-	    scene: [ gameBoot, gameLevel1 ]
+	    scene: [ sceneBoot, sceneLevel1 ]
 	};
 
 	game = new Phaser.Game(config);
