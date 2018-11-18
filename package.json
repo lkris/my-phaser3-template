@@ -4,8 +4,9 @@
   "description": "A Phaser 3 Project Template",
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack --env.prod=true",
-    "start": "webpack --env.prod=false && webpack-dev-server --port=8000 --env.prod=false"
+    "build.prod": "webpack --env.prod=true",
+    "build.dev":  "webpack --env.prod=false --env.cleanup=true",
+    "start": "webpack --env.prod=false --env.cleanup=true && webpack-dev-server --port=8000 --env.prod=false"
   },
   "repository": {
     "type": "git",

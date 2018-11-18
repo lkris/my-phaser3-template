@@ -11,6 +11,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = env => {
 
     const isProd = env.prod === 'true';
+    const runCleanup = isProd ? true : 
+      (env.cleanup == undefined ? false : 
+        (env.cleanup === 'true' ? true : false));
 
     return {
 
@@ -18,6 +21,12 @@ module.exports = env => {
         // ENTRY
         //
         entry: './src/game.js',
+        //
+        // DEV SERVER
+        //
+        devServer: {
+          contentBase: './build'
+        },
         //
         // OUTPUT
         //
@@ -54,17 +63,9 @@ module.exports = env => {
                     });
 
           // HTML
-          if (isProd) {
-            var _HtmlWebpackPlugin = new HtmlWebpackPlugin({
+          var _HtmlWebpackPlugin = new HtmlWebpackPlugin({
                       template: 'src/template.html'
-                  });            
-          } else {
-            var _HtmlWebpackPlugin = new HtmlWebpackPlugin({
-                      filename: '../index.html',
-                      template: 'src/template.html'
-                  });
-
-          };
+                    });            
           
           // ASSETS
           var _CopyWebpackPlugin = new CopyWebpackPlugin([
@@ -88,10 +89,10 @@ module.exports = env => {
 
           var _CleanWebpackPlugin = new CleanWebpackPlugin(pathsToClean, cleanOptions);
 
-          if (isProd) {
+          if (runCleanup) {
             return [ _WebPackDefinePlugin, _HtmlWebpackPlugin, _CopyWebpackPlugin, _CleanWebpackPlugin ];
           } else {
-            return[ _WebPackDefinePlugin, _HtmlWebpackPlugin ];
+            return[ _WebPackDefinePlugin, _HtmlWebpackPlugin, _CopyWebpackPlugin ];
           };
 
         }) ()

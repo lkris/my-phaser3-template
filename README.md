@@ -14,4 +14,5 @@ Run next commands in your terminal:
 |---------|-------------|
 | `npm install` | Install dependencies |
 | `npm run start` | (DEV) Build the app and run the Web server (http://localhost:8000) |
-| `npm run build` | (PROD) Create a build to distribute (folder /dist) |
+| `npm run build.dev` | (DEV) Create a build, result in folder /build |
+| `npm run build.prod` | (PROD) Create a build to distribute in folder /dist |
