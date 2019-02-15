@@ -1,7 +1,7 @@
 {
-  "name": "phaser3-project-template",
-  "version": "1.0.9",
-  "description": "A Phaser 3 Project Template",
+  "name": "my-phaser3-template",
+  "version": "1.0.0",
+  "description": "My Phaser 3 Project Template",
   "main": "src/index.js",
   "scripts": {
     "build.prod": "webpack --env.prod=true",
@@ -28,6 +28,6 @@
     "webpack-dev-server": "^2.11.0"
   },
   "dependencies": {
-    "phaser": "^3.3.0"
+    "phaser": "^3.16.2"
   }
 }
