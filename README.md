@@ -1,6 +1,6 @@
 # Phaser 3 template 
 
-This template use Webpack as a builder
+This template uses Webpack as a builder
 
 ### Requirements
 
