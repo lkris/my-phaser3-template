@@ -8,7 +8,7 @@ We need [Node.js](https://nodejs.org) to install and run scripts.
 
 ## Install and run
 
-Run next commands in your terminal:
+Run the next commands in your terminal:
 
 | Command | Description |
 |---------|-------------|
