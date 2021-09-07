@@ -1,10 +1,10 @@
 # Phaser 3 template 
 
-This is template a template to start a Phaser 3 project (https://phaser.io/). It uses Webpack as a builder.
+This is template a template to start a [Phaser 3](https://phaser.io/) project. It uses Webpack as a builder.
 
 ### Requirements
 
-We need [Node.js](https://nodejs.org) to install and run scripts.
+[Node.js](https://nodejs.org) is requested to install and run build/deploy scripts.
 
 ## Install and run
 
