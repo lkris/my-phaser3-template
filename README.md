@@ -1,6 +1,6 @@
 # Phaser 3 template 
 
-This template uses Webpack as a builder
+This is template a template to start a Phaser 3 project (https://phaser.io/). It uses Webpack as a builder.
 
 ### Requirements
 
