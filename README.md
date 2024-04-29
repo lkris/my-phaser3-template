@@ -4,7 +4,7 @@ This is template a template to start a [Phaser 3](https://phaser.io/) project. I
 
 ### Requirements
 
-[Node.js](https://nodejs.org) is requested to install and run build/deploy scripts.
+[Node.js](https://nodejs.org) is required to install and run build/deploy scripts.
 
 ## Install and run
 
